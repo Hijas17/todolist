@@ -2,10 +2,13 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom"
 
 
+interface Props{
+    color?:string;
+}
 
-class App extends React.Component{
+class App extends React.Component<Props>{
     render(){
-        return <div>TEST</div>
+        return <div>{this.props.color}</div>
     }
 }
 
